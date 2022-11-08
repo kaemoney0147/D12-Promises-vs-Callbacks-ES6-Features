@@ -96,3 +96,9 @@ fetch('https://api.pexels.com/v1/search?query=car', options)
         })
     }
 })
+let hideCard = (event) => {
+    let card =
+      event.target.parentElement.parentElement.parentElement.parentElement
+        .parentElement;
+    card.classList.add("d-none");
+  };
