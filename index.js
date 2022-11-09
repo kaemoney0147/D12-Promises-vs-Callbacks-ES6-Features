@@ -49,7 +49,7 @@ fetch('https://api.pexels.com/v1/search?query=dior', options)
             </div>`;
         })
     }
-})
+}).catch(err => console.error(err));
 
 const secondbutton=document.querySelector('#secondbutton')
 const container=document.querySelector('#rowcard')
@@ -95,7 +95,7 @@ fetch('https://api.pexels.com/v1/search?query=car', options)
             </div>`;
         })
     }
-})
+}).catch(err => console.error(err));
 let hideCard = (event) => {
     let card =
       event.target.parentElement.parentElement.parentElement.parentElement
